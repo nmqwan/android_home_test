@@ -56,7 +56,7 @@ public class Keyword {
         if (!TextUtils.isEmpty(getText())) {
             String[] keywords = getText().split(" ");
             int midLength = keywords.length / 2;
-            if (keywords.length != 1) {
+            if (keywords.length > 1) {
                 for (int i = 0; i < keywords.length; i++) {
                     if (i != midLength - 1) textMutilLine.append(keywords[i]).append(" ");
                     else textMutilLine.append(keywords[i]).append("\n");

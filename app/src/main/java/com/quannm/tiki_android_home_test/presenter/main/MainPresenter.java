@@ -52,7 +52,7 @@ public class MainPresenter implements IMainPresenter {
 
 
     /**
-     * Convert list string to list keyword convert mutilline
+     * Convert list string to list keyword
      *
      * @param strings
      * @return Arraylist keyword
