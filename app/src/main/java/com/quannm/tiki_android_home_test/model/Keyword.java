@@ -13,11 +13,6 @@ public class Keyword {
     private String text;
     private int color;
 
-    /**
-     * construtor
-     *
-     * @param text
-     */
     public Keyword(String text) {
         this.text = text;
     }

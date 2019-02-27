@@ -11,17 +11,18 @@ import java.util.concurrent.TimeUnit;
 import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
-public abstract class BaseApiService {
-    IApiService iService;
-    Retrofit retrofit;
-    Context mContext;
-    OkHttpClient okHttpClient;
 
-    public BaseApiService(Context mContext) {
+abstract class BaseApiService {
+    IApiService iService;
+    private Retrofit retrofit;
+    private Context mContext;
+    private OkHttpClient okHttpClient;
+
+    BaseApiService(Context mContext) {
         this.mContext = mContext;
     }
 
-    public Retrofit getClient() {
+    Retrofit getClient() {
         Gson gson = new GsonBuilder().create();
         OkHttpClient.Builder httpClient = new OkHttpClient.Builder();
         okHttpClient = httpClient.readTimeout(60, TimeUnit.SECONDS)

@@ -18,8 +18,6 @@ public class KeywordAdapter extends RecyclerView.Adapter<KeywordAdapter.KeywordV
     private ArrayList<Keyword> datas;
     private LayoutInflater mLayoutInflater;
     private Context mContext;
-    private String TAG = KeywordAdapter.class.getSimpleName();
-
 
     public KeywordAdapter(ArrayList<Keyword> datas, Context mContext) {
         this.datas = datas;

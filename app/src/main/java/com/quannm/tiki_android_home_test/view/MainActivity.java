@@ -19,7 +19,6 @@ public class MainActivity extends BaseActivity implements MainPresenter.SetOnMai
     private RecyclerView rvKeywords;
     private LinearLayout lineProgressBar;
     private LinearLayoutManager layoutManager;
-    private String TAG = MainActivity.class.getSimpleName();
     private ArrayList<Keyword> keywords;
     private KeywordAdapter adapter;
     private MainPresenter presenter;
